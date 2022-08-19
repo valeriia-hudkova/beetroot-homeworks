@@ -1,0 +1,147 @@
+:root {
+  --c-grey: #828282;
+  --c-black: #070707;
+  --c-star: #e5e5e5;
+  --c-white: rgb(255, 255, 255, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+/* *Header */
+.header {
+  border-bottom: 1px solid var(--c-grey);
+  padding-top: 25px;
+  background-color: var(--c-white);
+}
+
+.header-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header-menu {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-grey);
+}
+
+.header-menu-item {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--c-grey);
+  margin-right: 40px;
+}
+
+.header-menu-item:hover,
+a:hover {
+  color: var(--c-black);
+  cursor: pointer;
+}
+
+/* *Banner */
+
+.banner-name {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  padding-bottom: 50px;
+  padding-top: 12px;
+}
+
+.banner-photo {
+  max-height: 388px;
+}
+
+.banner-img {
+  max-width: 100%;
+  
+}
+
+/* *About me */
+.about {
+  background-color: #f6f6f6;
+}
+
+.headline-name {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about-info {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.about-info-item,
+.skills-subtitle {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about-info-item:last-child {
+
+  padding-bottom: 0;
+}
+
+/* *Skills */
+.skills {
+  padding-bottom: 100px;
+}
+.skills-subtitle {
+  padding-top: 20px;
+}
+
+.skills-list {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.skills-list-item-name {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  align: center;
+  color: var(--c-grey);
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.skills-list-item {
+  display: inline-block;
+  margin: 0 48px;
+  /* height: 230px; */
+}
+.checked {
+  color: var(--c-black);
+}
+
+.unchecked {
+  color: var(--c-star);
+}
