@@ -10,99 +10,107 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>CV Valeriia Hudkova</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <style type="text/css">
-      aside {
-        background: #bbbbbb;
-        padding: 10px;
-        width: 300px;
-        float: left;
-        margin-right: 40px;
-      }
-      .main {
-        padding-top: 100px;
-      }
-      a {
-        color: #3d3d42;
-      }
-      span {
-        color: rgb(128, 122, 211);
-      }
-    </style>
   </head>
   <body>
     <a href="../index.html">Main page</a> <br />
-    <div>
+    <div class="container main">
       <!--Sidebar-->
-      <aside>
-        <img src="./assets/img.jpeg" alt="user photo" width="300px" />
-        <!--Contacts-->
+      <aside class="sidebar">
         <div>
-          <h3>Контакти</h3>
+          <img src="./assets/img.jpeg" alt="user photo" class="img" />
+        </div>
+        <!--Contacts-->
+        <div class="contacts">
+          <h3 class="sidebar-title">Контакти</h3>
           <div>
-            <p>
-              <b>C:</b>
-              <a href="tel:+380968445588">+380968445588</a>
-            </p>
-            <p>
-              <b>E:</b>
-              <a href="mailto:jalocada21@gmail.com">jalocada21@gmail.com</a>
-            </p>
-            <p>
+            <div class="contacts-item">
+              <div class="contacts-pic">
+                <img src="./assets/tel.png" alt="phone pic" class="pic" />
+              </div>
+              <a href="tel:+380968445588" class="contacts-link"
+                >+380968445588</a
+              >
+            </div>
+            <div class="contacts-item">
+              <div class="contacts-pic">
+                <img src="./assets/email.png" alt="email pic" class="pic" />
+              </div>
+              <a href="mailto:jalocada21@gmail.com" class="contacts-link"
+                >jalocada21@gmail.com</a
+              >
+            </div>
+            <div class="contacts-item">
+              <div class="contacts-pic">
+                <img src="./assets/fb.png" alt="fb pic" class="pic" />
+              </div>
               <a
                 href="https://www.facebook.com/valeriia.hudkova/"
                 target="_blank"
+                class="contacts-link"
                 >Facebook</a
               >
-            </p>
-            <p>
-              <a href="https://www.instagram.com/vlr.gdkva/" target="_blank"
+            </div>
+            <div class="contacts-item">
+              <div class="contacts-pic">
+                <img src="./assets/inst.png" alt="inst pic" class="pic" />
+              </div>
+              <a
+                href="https://www.instagram.com/vlr.gdkva/"
+                target="_blank"
+                class="contacts-link"
                 >Instagram</a
               >
-            </p>
+            </div>
           </div>
         </div>
 
         <!--Tech skills-->
-        <div>
-          <h3>Tech skills</h3>
+        <div class="tech-skills">
+          <h3 class="sidebar-title">Tech skills</h3>
           <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>GIT</li>
-            <li>WebPack</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>AngularJS</li>
+            <li class="list-item"><span class="list-text">HTML5</span></li>
+            <li class="list-item"><span class="list-text">CSS3</span></li>
+            <li class="list-item"><span class="list-text">GIT</span></li>
+            <li class="list-item"><span class="list-text">WebPack</span></li>
+            <li class="list-item"><span class="list-text">JavaScript</span></li>
+            <li class="list-item"><span class="list-text">React.js</span></li>
+            <li class="list-item"><span class="list-text">Node.js</span></li>
+            <li class="list-item"><span class="list-text">AngularJS</span></li>
           </ul>
         </div>
         <!--Soft skills-->
-        <div>
-          <h3>Soft Skills</h3>
+        <div class="soft-skills">
+          <h3 class="sidebar-title">Soft Skills</h3>
           <ul>
-            <li>Scrum</li>
-            <li>Agile</li>
-            <li>GTD</li>
-            <li>Teamwork</li>
-            <li>Problem-solving</li>
+            <li class="list-item"><span class="list-text">Scrum</span></li>
+            <li class="list-item"><span class="list-text">GTD</span></li>
+            <li class="list-item"><span class="list-text">Teamwork</span></li>
+            <li class="list-item">
+              <span class="list-text">Problem-solving</span>
+            </li>
           </ul>
         </div>
         <!--Languages-->
-        <div>
-          <h3>Мови</h3>
+        <div class="lang">
+          <h3 class="sidebar-title">Мови</h3>
           <ul>
-            <li>Українська - рідна</li>
-            <li>Англійська - середній</li>
-            <li>Російська - рідна</li>
+            <li class="list-item">
+              <span class="list-text">Українська - рідна</span>
+            </li>
+            <li class="list-item">
+              <span class="list-text">Англійська - середній</span>
+            </li>
+            <li class="list-item">
+              <span class="list-text">Російська - рідна</span>
+            </li>
           </ul>
         </div>
       </aside>
       <!--Main-->
-
-      <div class="main">
+      <div class="main-content">
         <!--Main Content-->
         <div>
           <!--about user-->
@@ -113,7 +121,7 @@
 
             <p>
               Я шукаю посаду trainee/junior Frontend Software Engineer, щоб
-              вдосконалити свої навички <br />кодування, здобути новий досвід і
+              вдосконалити свої навички кодування, здобути новий досвід і
               допомогти компанії у своєчасному завершенні проектів.
             </p>
           </div>
@@ -155,7 +163,7 @@
 
             <ul>
               <li>Внесення даних в базу 1С</li>
-              <li>Оформлення товарно-транспортні накладні</li>
+              <li>Оформлення товарно-транспортних накладних</li>
               <li>Здійснення взаєморозрахунків з клієнтами</li>
             </ul>
           </div>
@@ -168,8 +176,8 @@
             <p>Жовтень 2017 - Листопад 2018</p>
 
             <ul>
-              <li>Спілкуванея і допомога клієнтам</li>
-              <li>Робота з електронною поштою, кореспонденцією</li>
+              <li>Спілкування і допомога клієнтам</li>
+              <li>Робота з електронною поштою та кореспонденцією</li>
               <li>Відповідати та перенаправляти дзвінки</li>
             </ul>
           </div>

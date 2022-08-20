@@ -1,0 +1,234 @@
+:root {
+  --c-white: #e3eaf5;
+  --c-blue: #213657;
+  --c-blended: #9561dd;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+div {
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  display: flex;
+  list-style-position: inside;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+/* *Sidebar */
+.sidebar {
+  background-color: var(--c-blue);
+  padding-top: 40px;
+  max-width: 350px;
+  /* margin-right: 50px; */
+}
+
+.img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contacts,
+.tech-skills,
+.soft-skills,
+.lang {
+  font-family: "'Montserrat', sans-serif";
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+.sidebar-title {
+  color: var(--c-white);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+/*Contacts */
+.contacts-item {
+  margin-bottom: 10px;
+}
+
+.contacts-link {
+  color: var(--c-white);
+}
+
+.contacts-link:hover {
+  cursor: pointer;
+  color: var(--c-blended);
+}
+.contacts-pic {
+  display: inline-block;
+}
+
+.pic {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+/* Skills plus Laanguages */
+.list-item {
+  color: var(--c-blended);
+  margin-bottom: 4px;
+}
+
+.list-text {
+  color: var(--c-white);
+}
+
+/* *Main content */
+
+.main-content {
+  margin-left: 50px;
+}
+
+
+/*
+
+
+
+.about{
+  margin-bottom: 40px;
+}
+
+.aboutPosition{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.aboutName{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+
+.aboutInfo{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  width: 400px;
+}
+
+.projects{
+  margin-bottom: 50px;
+}
+
+.projectList{
+  padding-left: 0;
+  margin-left: 17.5px;
+}
+
+.projectItem,
+.pBracket{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.project,
+.projectLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.workPos{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.organization{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FB6D3A;
+}
+
+.workList{
+  padding-left: 0;
+  margin-left: 21px;
+}
+
+.workListItem{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.period{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #A8A8A8;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.stick{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.university{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FB6D3A;
+  margin-bottom: 12px;
+  margin-top: 0px;
+}
+
+.specialization{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+ */
