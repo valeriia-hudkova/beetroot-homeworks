@@ -2,6 +2,7 @@
   --c-white: #e3eaf5;
   --c-blue: #213657;
   --c-blended: #9561dd;
+  --c-lightblue: #4e71a8;
 }
 
 * {
@@ -10,25 +11,16 @@
   margin: 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 970px;
-  margin: 0 auto;
-  /* border: 1px solid red; */
-}
-
-div {
-  /* border: 1px solid red; */
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
 
 .main {
-  display: flex;
-  list-style-position: inside;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  display: flex;
 }
 
 /* *Sidebar */
@@ -72,7 +64,6 @@ body {
 }
 
 .contacts-link:hover {
-  cursor: pointer;
   color: var(--c-blended);
 }
 
@@ -90,7 +81,8 @@ body {
 
 .list-item {
   color: var(--c-blended);
-  margin-bottom: 4px;
+  padding-bottom: 4px;
+  list-style-position: inside;
 }
 
 .list-text {
@@ -100,136 +92,110 @@ body {
 /* *Main content */
 
 .main-content {
-  margin-left: 50px;
+  padding: 100px 90px;
+  color: var(--c-blue);
 }
 
-/*
-.about{
+/* *About */
+
+.about,
+.education,
+.work {
   margin-bottom: 40px;
 }
 
-.aboutPosition{
-  font-style: normal;
+.about-position {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
-.aboutName{
-  font-style: normal;
+.about-name {
   font-weight: 700;
   font-size: 45px;
-  line-height: 55px;
   margin-bottom: 25px;
 }
 
-.aboutInfo{
-  font-style: normal;
+.about-info {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  color: #595959;
   width: 400px;
+  text-align: justify;
 }
 
-.projects{
-  margin-bottom: 50px;
-}
-
-.projectList{
-  padding-left: 0;
-  margin-left: 17.5px;
-}
-
-.projectItem,
-.pBracket{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.project,
-.projectLink {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-}
-
-.workPos{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.organization{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FB6D3A;
-}
-
-.workList{
-  padding-left: 0;
-  margin-left: 21px;
-}
-
-.workListItem{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-}
+/* *Education */
 
 .title {
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  line-height: 27px;
   margin-bottom: 10px;
 }
 
-.period{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #A8A8A8;
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-
-.stick{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-
-.university{
-  font-style: normal;
+.education-university {
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
-  color: #FB6D3A;
+  color: var(--c-blended);
   margin-bottom: 12px;
-  margin-top: 0px;
 }
 
-.specialization{
-  font-style: normal;
+.education-spec {
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
   margin-bottom: 10px;
-  margin-top: 0px;
 }
- */
+
+.period {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--c-lightblue);
+}
+
+/* * Work */
+
+.work-company {
+  margin-bottom: 20px;
+}
+
+.work-pos {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.work-organisation {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--c-blended);
+}
+
+.work-list {
+  margin-top: 20px;
+}
+
+.work-list-style-type {
+  color: var(--c-blended);
+  padding-bottom: 8px;
+  margin-left: 20px;
+}
+
+.work-list-style-type:last-child {
+  padding-bottom: 0;
+}
+
+.work-list-item {
+  color: var(--c-blue);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Link */
+
+.link {
+  color: var(--c-blue);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--c-lightblue);
+}
