@@ -1,8 +1,13 @@
 :root {
+  /* Colors */
   --c-white: #e3eaf5;
   --c-blue: #213657;
   --c-blended: #9561dd;
   --c-lightblue: #4e71a8;
+
+  /* Fonts */
+  --f-weight-big: 700;
+  --f-weight-small: 400;
 }
 
 * {
@@ -47,7 +52,7 @@ body {
 
 .sidebar-title {
   color: var(--c-white);
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 10px;
@@ -105,19 +110,19 @@ body {
 }
 
 .about-position {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 18px;
   margin-bottom: 20px;
 }
 
 .about-name {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 45px;
   margin-bottom: 25px;
 }
 
 .about-info {
-  font-weight: 400;
+  font-weight: var(--f-weight-small);
   font-size: 16px;
   line-height: 24px;
   width: 400px;
@@ -127,26 +132,26 @@ body {
 /* *Education */
 
 .title {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 22px;
   margin-bottom: 10px;
 }
 
 .education-university {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 16px;
   color: var(--c-blended);
   margin-bottom: 12px;
 }
 
 .education-spec {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .period {
-  font-weight: 400;
+  font-weight: var(--f-weight-small);
   font-size: 12px;
   color: var(--c-lightblue);
 }
@@ -158,13 +163,13 @@ body {
 }
 
 .work-pos {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 16px;
   margin-bottom: 10px;
 }
 
 .work-organisation {
-  font-weight: 700;
+  font-weight: var(--f-weight-big);
   font-size: 16px;
   color: var(--c-blended);
 }
@@ -185,7 +190,7 @@ body {
 
 .work-list-item {
   color: var(--c-blue);
-  font-weight: 400;
+  font-weight: var(--f-weight-small);
   font-size: 14px;
 }
 
