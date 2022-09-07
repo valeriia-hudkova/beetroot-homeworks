@@ -6,89 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 6</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./font/lucida-sans-unicode.ttf">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./font/lucida-sans-unicode.ttf" />
   </head>
   <body>
-    
-    <header>
+    <header class="header">
       <a href="../index.html">Main page</a> <br />
 
-      <div class="container header-wrapper">
+      <div class="wrapper header-wrapper">
         <span class="header-title">CSS Weather Forecast</span>
         <i class="wi wi-sunrise"></i>
       </div>
     </header>
-<main class="container">
-  <div >
-  <ul class="weather-table">
-    <li class="medium-tile lisbon-city"> <p class="city">
-      Lisbon
-    </p> 
-      <p>
-        <span class="temperature">21°C</span><i class="wi wi-day-sunny"></i>
-      </p>
-    </li>
-    <li class="small-tile paris-city"> <p class="city">Paris</p>
-      <p>
-        <span class="temperature">11°C</span><i class="wi wi-night-sleet"></i>
-      </p>
-    </li>
-    <li class="small-tile belgrade-city"><p class="city">Belgrade</p>
-      <div>
-        <p>
-          <span class="temperature">15°C</span><i class="wi wi-day-cloudy"></i>
+    <section class="wrapper weather-wrapper">
+      <div class="app">
+        <ul class="weather-table">
+          <li class="medium-tile weather-table-item">
+            <p class="city">Lisbon</p>
+            <p>
+              <span class="temperature">21°C</span
+              ><i class="wi wi-day-sunny"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">Paris</p>
+            <p>
+              <span class="temperature">11°C</span
+              ><i class="wi wi-night-sleet"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">Belgrade</p>
+            <div>
+              <p>
+                <span class="temperature">15°C</span
+                ><i class="wi wi-day-cloudy"></i>
+              </p>
+            </div>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">Venice</p>
+            <p>
+              <span class="temperature">21°C</span
+              ><i class="wi wi-day-cloudy-high"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">Tel-Aviv</p>
+            <p>
+              <span class="temperature">32°C</span><i class="wi wi-hot"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">Cair</p>
+            <p>
+              <span class="temperature">21°C</span
+              ><i class="wi wi-day-sunny"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">New-York</p>
+            <p>
+              <span class="temperature">17°C</span
+              ><i class="wi wi-day-sleet-storm"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">New-Delhi</p>
+            <p>
+              <span class="temperature">17°C</span><i class="wi wi-hail"></i>
+            </p>
+          </li>
+          <li class="medium-tile weather-table-item">
+            <p class="city">San-Francisco</p>
+            <p>
+              <span class="temperature">15°C</span
+              ><i class="wi wi-day-sunny-overcast"></i>
+            </p>
+          </li>
+          <li class="small-tile weather-table-item">
+            <p class="city">Tokyo</p>
+            <p>
+              <span class="temperature">8°C</span
+              ><i class="wi wi-night-clear"></i>
+            </p>
+          </li>
+          <li class="big-tile weather-table-item">
+            <p class="city">Sydney</p>
+            <p>
+              <span class="temperature">25°C</span
+              ><i class="wi wi-night-partly-cloudy"></i>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper footer-wrapper">
+        <p class="footer-text">
+          Have a nice day and don't forget umbrella if you are in New Delhi now!
         </p>
       </div>
-    </li>
-    <li class="small-tile venice-city">Venice
-      <p>
-        <span>21°C</span><i class="wi wi-day-cloudy-high"></i>
-      </p>
-    </li>
-    <li class="small-tile telav-city">Tel-Aviv
-      <p>
-        <span>32°C</span><i class="wi wi-hot"></i>
-      </p>
-    </li>
-    <li class="small-tile cair-city">Cair
-      <p>
-        <span>21°C</span><i class="wi wi-day-sunny"></i>
-      </p>
-    </li>
-    <li class="small-tile ny-city">New-York
-      <p>
-        <span>17°C</span><i class="wi wi-day-sleet-storm"></i>
-      </p>
-    </li>
-    <li class="small-tile nd-city">New-Delhi
-      <p>
-        <span>17°C</span><i class="wi wi-hail"></i>
-      </p>
-    </li>
-    <li class="medium-tile sf-city">San-Francisco
-      <p>
-        <span>15°C</span><i class="wi wi-day-sunny-overcast"></i>
-      </p>
-    </li>
-    <li class="small-tile tokyo-city">Tokyo
-      <p>
-        <span>8°C</span><i class="wi wi-night-clear"></i>
-      </p>
-    </li>
-    <li class="big-tile sydney-city">Sydney
-      <p>
-        <span>25°C</span><i class="wi wi-night-partly-cloudy"></i>
-      </p>
-    </li>
-  </div>
-</main>
-    <footer>
-      <div class="container">
-
-        <p class="footer-text">Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
-      </div>
     </footer>
-    </body>
+  </body>
 </html>

@@ -1,15 +1,15 @@
 :root {
-  --c-lisbon: rgba(51, 153, 204, 0.702);
-  --c-paris: rgba(51, 204, 204, 0.702);
-  --c-begrade: rgb(153, 102, 153, 0.7);
-  --c-venice: rgba(194, 71, 71, 0.702);
-  --c-tel-aviv: rgba(226, 103, 74, 0.7);
-  --c-cair: rgb(255, 204, 102, 0.7);
-  --c-ny: rgb(153, 204, 153, 0.7);
-  --c-nd: rgb(102, 153, 153, 0.7);
-  --c-sf: rgb(204, 102, 153, 0.7);
-  --c-tokyo: rgb(51, 153, 102, 0.7);
-  --c-sydney: rgb(102, 102, 153, 0.7);
+  --c-lisbon: rgba(51, 153, 204);
+  --c-paris: rgba(51, 204, 204);
+  --c-belgrade: rgb(153, 102, 153);
+  --c-venice: rgba(194, 71, 71);
+  --c-tel-aviv: rgba(226, 103, 74);
+  --c-cair: rgb(255, 204, 102);
+  --c-ny: rgb(153, 204, 153);
+  --c-nd: rgb(102, 153, 153);
+  --c-sf: rgb(204, 102, 153);
+  --c-tokyo: rgb(51, 153, 102);
+  --c-sydney: rgb(102, 102, 153);
   --c-border: #2782ae;
   --c-background: #2f9acd;
   --c-white: #ffffff;
@@ -19,43 +19,63 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all .1s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+a {
+  color: var(--c-white);
 }
 
 body {
   background-color: var(--c-background);
   border: 20px solid var(--c-border);
+  font-family: "Lucida Sans Unicode";
+  color: var(--c-white);
 }
 
-.container {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
-  height: 100%;
-  justify-content: center;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 35px;
 }
 
 .header-title {
-  font-family: "Lucida Sans Unicode";
   font-size: 21px;
   line-height: 25px;
+}
+
+.header-title .wi {
+  font-size: 27px;
+}
+
+/* Weather table */
+
+.weather-wrapper {
+  margin-bottom: 35px;
 }
 
 .weather-table {
   list-style: none;
   text-align: center;
-  background-color: aqua;
   font-size: 0;
 }
+
 .weather-table li {
+  border: 2px solid var(--c-white);
   display: inline-block;
-  font-family: "Lucida Sans Unicode";
-  font-size: 22px;
+  padding-bottom: 26px;
+  padding-top: 26px;
   line-height: 26px;
-  border: 1px solid #ffffff;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .small-tile {
@@ -70,84 +90,99 @@ body {
   width: 100%;
 }
 
-.small-tile,
-.medium-tile,
-.big-tile {
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
 .city {
   margin-bottom: 4px;
 }
 
 .temperature,
 .city {
-  font-family: 'Lucida Sans Unicode'
   font-size: 22px;
   line-height: 26px;
-  color: var(--c-white);
 }
 
 .temperature {
   margin-right: 10px;
   text-align: center;
+  display: inline-block;
 }
 
 .wi {
-  color: var(--c-white);
   font-weight: 400;
-font-size: 40px;
-line-height: 60px;
-
 }
 
-.lisbon-city {
+.weather-table .wi {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.app {
+  border: 2px solid var(--c-white);
+}
+
+.weather-table-item:nth-child(1) {
   background-color: var(--c-lisbon);
 }
 
-.paris-city {
+.weather-table-item:nth-child(2) {
   background-color: var(--c-paris);
 }
 
-.belgrade-city {
-  background-color: var(--c-begrade);
+.weather-table-item:nth-child(3) {
+  background-color: var(--c-belgrade);
 }
 
-.venice-city {
+.weather-table-item:nth-child(4) {
   background-color: var(--c-venice);
 }
 
-.telav-city {
-  background-color:var(--c-tel-aviv);
+.weather-table-item:nth-child(5) {
+  background-color: var(--c-tel-aviv);
 }
 
-.cair-city {
+.weather-table-item:nth-child(6) {
   background-color: var(--c-cair);
 }
 
-.ny-city {
+.weather-table-item:nth-child(7) {
   background-color: var(--c-ny);
 }
 
-.nd-city {
+.weather-table-item:nth-child(8) {
   background-color: var(--c-nd);
 }
 
-.sf-city {
+.weather-table-item:nth-child(9) {
   background-color: var(--c-sf);
 }
 
-.tokyo-city {
+.weather-table-item:nth-child(10) {
   background-color: var(--c-tokyo);
 }
 
-.sydney-city {
+.weather-table-item:nth-child(11) {
   background-color: var(--c-sydney);
 }
 
 .footer-text {
-  font-family: "Lucida Sans Unicode";
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.weather-table:hover .weather-table-item {
+  opacity: 0.7;
+}
+
+.weather-table .weather-table-item:hover {
+  opacity: 1;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  margin-bottom: 120px;
+}
+
+.footer-text {
   font-size: 16px;
   line-height: 19px;
 }
