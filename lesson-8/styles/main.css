@@ -30,3 +30,9 @@ ul {
   cursor: pointer;
   border: none;
 }
+
+/* Link Main page */
+
+a {
+  color: var(--c-pink-red);
+}

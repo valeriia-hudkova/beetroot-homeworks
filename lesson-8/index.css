@@ -5,6 +5,15 @@
   width: 100%;
 }
 
+/* Main page link */
+
+.main-page {
+  background-color: var(--c-light-grey);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 /* *Header */
 .header-wrapper {
   background-color: var(--c-light-grey);
@@ -13,7 +22,7 @@
   flex-direction: column;
   padding-bottom: 12px;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 4px; /* так как ссылка занимает 16px, уменьшила отступ хэдера с 20px до 4px*/
   display: flex;
 }
 
