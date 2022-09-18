@@ -1,0 +1,16 @@
+:root {
+  /* *Colors */
+  --c-light-grey: #4a4f56;
+  --c-grey: rgb(74, 79, 86, 0.6);
+  --c-black: #3b3f45;
+  --c-pink-red: #ff8984;
+  --c-list-item: #88839e;
+  --c-list-item-hover: #625e77;
+  --c-list-item-checked: #7a7593;
+  --c-text-checked: #9b96ac;
+  --c-white: #ffffff;
+
+  /* *Transition */
+  --b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-normal: 0.35s var(--b-normal);
+}

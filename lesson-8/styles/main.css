@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--c-black);
+  font-family: "Roboto";
+}
+
+/* *Lists */
+ul {
+  list-style-type: none;
+}
+
+/* *Button */
+
+.button {
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
