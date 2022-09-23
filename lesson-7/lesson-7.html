@@ -4,11 +4,202 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 7</title>
+    <title>Document</title>
+    <!-- *Styles -->
+    <!-- Main -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Others -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- *Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <a href="../index.html">Main page</a> <br />
+    <!--App  -->
+    <div class="app">
+      <!-- *Header -->
+      <header class="header">
+        <div class="wrapper header-wrapper">
+          <!--Logo  -->
+          <a href="./index.html" class="logo" title="Productly">
+            <div class="logo-image-block">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </div>
 
+            <span class="logo-text">Productly</span>
+          </a>
+          <!-- Navigation -->
+          <div class="header-nav">
+            <div class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Product</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Customers</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Pricing</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Resources</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Buttons -->
+          <div class="header-buttons">
+            <button title="Sign In" class="button header-button" type="button">
+              <span>Sign In</span>
+            </button>
+            <button
+              title="Sign Up"
+              class="button button--orange header-button"
+              type="button"
+            >
+              <span>Sign Up</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- *Main -->
+      <main class="">
+        <!-- *First screen -->
+        <div class="wrapper first-screen">
+          <div>
+            <h2 class="first-screen-headline">
+              The Design Thinking superpowers
+            </h2>
+            <p class="first-screen-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <!-- Button -->
+            <button
+              title="Get started"
+              class="button button--orange first-screen-button"
+              type="button"
+            >
+              <span>Get started</span>
+            </button>
+          </div>
+          <!-- Image -->
+          <div>
+            <img
+              src="./assets/images/image-first-block.svg"
+              alt="Three happy people"
+              class="first-screen-image"
+            />
+          </div>
+        </div>
+        <!-- *Features block -->
+        <div class="features">
+          <div class="wrapper features-wrapper">
+            <h2 class="features-headline">
+              We design tools to unveil <br />
+              your superpowers
+            </h2>
+            <!-- Advantages -->
+            <div class="features-gradient-block">
+              <div class="features-advantages">
+                <div class="features-advantages-item">
+                  <h3 class="features-adv-headline">First click tests</h3>
+                  <p class="features-adv-text">
+                    While most people enjoy casino gambling,
+                  </p>
+                </div>
+                <div class="features-advantages-item">
+                  <h3 class="features-adv-headline">Design surveys</h3>
+                  <p class="features-adv-text">
+                    Sports betting, lottery and bingo playing for the fun
+                  </p>
+                </div>
+                <div class="features-advantages-item">
+                  <h3 class="features-adv-headline">Preference tests</h3>
+                  <p class="features-adv-text">
+                    The Myspace page defines the individual.
+                  </p>
+                </div>
+                <div class="features-advantages-item">
+                  <h3 class="features-adv-headline">Five second tests</h3>
+                  <p class="features-adv-text">
+                    Personal choices and the overall personality of the person.
+                  </p>
+                </div>
+              </div>
+              <div class="features-button-block">
+                <button
+                  title="Sign up Now"
+                  class="button button--orange sign-up-now-button"
+                  type="button"
+                >
+                  <span>Sign up Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- *Footer -->
+      <footer class="footer">
+        <div class="wrapper footer-wrapper">
+          <!-- Logo -->
+          <a href="./index.html" class="logo" title="Productly">
+            <div class="logo-image-block">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </div>
+            <span class="logo-text">Productly</span>
+          </a>
+          <!-- Quick Links -->
+          <div>
+            <h4 class="footer-headline">Quick Links</h4>
+            <ul>
+              <li class="footer-nav-item">About US</li>
+              <li class="footer-nav-item">Blog</li>
+              <li class="footer-nav-item">Contact</li>
+              <li class="footer-nav-item">FAQ</li>
+            </ul>
+          </div>
+          <!-- Legal Stuff -->
+          <div>
+            <h4 class="footer-headline">Legal Stuff</h4>
+            <ul>
+              <li class="footer-nav-item">Disclaimer</li>
+              <li class="footer-nav-item">Financing</li>
+              <li class="footer-nav-item">Privacy Policy</li>
+              <li class="footer-nav-item">Terms of Service</li>
+            </ul>
+          </div>
+          <!-- Form -->
+          <div class="footer-form">
+            <div class="footer-form-headline">
+              <p class="footer-form-headline-text">Knowing you're always on</p>
+              <p class="footer-form-headline-text">the best energy deal.</p>
+            </div>
+            <form>
+              <input
+                class="footer-number-field"
+                type="text"
+                placeholder="Enter your phone Number"
+              />
+            </form>
+            <div>
+              <button
+                title="Sign up Now"
+                class="button button--orange sign-up-now-button"
+                type="button"
+              >
+                <span>Sign up Now</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

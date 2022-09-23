@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("./assets/fonts/gotham-bold.ttf") format("ttf");
+}
+
+:root {
+  --c-white: #fff;
+  --c-orange: #ff9900;
+  --c-black: #2f281e;
+  --c-blue: #173a56;
+  --c-light-blue: #bcd0e5;
+  --c-black-text: #544837;
+  /* fonts */
+  --c-gotham: "Gotham";
+  /* cubic-bezier */
+  --b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Transition */
+  --t-normal: 0.35s var(--b-normal);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--c-white);
+  font-family: "Montserrat";
+  color: var(--c-black);
+}
+
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-black);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+  border: 1px solid var(--c-light-blue);
+  background-color: var(--c-white);
+  transition: var(--t-normal);
+  align-items: center;
+  border-radius: 4px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 0 20px;
+  font-size: 16px;
+  height: 46px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button:hover {
+    background-color: var(--c-light-blue);
+}
+
+.button--orange {
+    background-color: var(--c-orange);
+    border-color: var(--c-orange);
+    color: var(--c-white);
+}
+
+.button--orange:hover {
+    background-color: var(--c-orange);
+    opacity: 0.8;
+}
+
+
+
