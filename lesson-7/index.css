@@ -7,6 +7,15 @@
   display: flex;
 }
 
+.main-page {
+  color: var(--c-orange);
+}
+
+.main-page:hover {
+  color: var(--c-orange);
+  opacity: 0.8;
+}
+
 /* *Logo */
 .logo {
   align-items: center;
@@ -28,9 +37,6 @@
 }
 
 /* *Navigation */
-
-.navigation {
-}
 
 .navigation-list {
   display: flex;
@@ -96,7 +102,6 @@
 }
 
 /* *Features */
-
 
 .features-headline {
   font-weight: 700;
