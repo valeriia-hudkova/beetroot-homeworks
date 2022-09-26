@@ -4,11 +4,187 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 4</title>
+    <title>HTML5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <a href="../index.html">Main page</a> <br />
-    
+    <a href="../index.html" class="main-page">Main page</a> <br />
+    <!-- *Header -->
+    <header class="wrapper header-wrapper">
+      <!-- *Logo -->
+      <a href="./lesson-4.html">
+        <div>
+          <img src="./assets/icon-black.svg" alt="logo" />
+        </div>
+      </a>
+      <!-- *Navigation -->
+      <div class="navigation">
+        <nav>
+          <ul class="navigation">
+            <li class="navigation-item">Главная</li>
+            <li class="navigation-item">Галерея</li>
+            <li class="navigation-item">
+              <a href="./lesson-4.html">Проекты</a>
+            </li>
+            <li class="navigation-item">Сертификаты</li>
+            <li class="navigation-item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper projects">
+        <div class="projects-headline">
+          <h1 class="projects-headline-text">
+            Наши
+            <br />
+            <span class="projects-headline-text-modified">проекты</span>
+          </h1>
+        </div>
+        <section class="projects-item">
+          <img src="./assets/img-1.jpg" alt="school" class="image" />
+
+          <div>
+            <div class="projects-item-info">
+              <h2 class="projects-item-info-headline">
+                Общеобразовательная <br />
+                школа
+              </h2>
+              <div class="projects-item-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <button title="View" class="button" type="button">
+              <span class="button-text"> Смотреть</span>
+              <img src="./assets/arrow.png" alt="arrow" class="button-arrow" />
+            </button>
+          </div>
+        </section>
+        <section class="projects-item">
+          <img src="./assets/img-2.jpg" alt="parking" class="image" />
+
+          <div>
+            <div class="projects-item-info">
+              <h2 class="projects-item-info-headline">
+                Паркинг на 500 <br />
+                автомобилей
+              </h2>
+              <div class="projects-item-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <button title="View" class="button" type="button">
+              <span class="button-text"> Смотреть</span>
+              <img src="./assets/arrow.png" alt="arrow" class="button-arrow" />
+            </button>
+          </div>
+        </section>
+        <section class="projects-item">
+          <iframe
+              width="670"
+              height="350"
+              src="https://www.youtube.com/embed/OQQ4a4Os6cE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          <div>
+            <div class="projects-item-info">
+              <h2 class="projects-item-info-headline">
+                Проект интерьера <br />
+                офиса
+              </h2>
+              <div class="projects-item-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <button title="View" class="button" type="button">
+              <span class="button-text"> Смотреть</span>
+              <img src="./assets/arrow.png" alt="arrow" class="button-arrow" />
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer-wrapper">
+        <div>
+          <a href="./lesson-4.html">
+            <div>
+              <img src="./assets/icon-white.svg" alt="logo" />
+            </div>
+          </a>
+        </div>
+        <div>
+          <h3>Информация</h3>
+          <ul class="footer-info-list">
+            <li class="footer-info-list-item">Главная</li>
+            <li class="footer-info-list-item">Галерея</li>
+            <li class="footer-info-list-item">Проекты</li>
+            <li class="footer-info-list-item">Сертификаты</li>
+            <li class="footer-info-list-item">Контакты</li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h3 id="contacts">Контакты</h3>
+          <div class="footer-contacts-adress">
+            <div class="contact-icon">
+              <img src="./assets/map.svg" alt="map pointer" />
+            </div>
+            <span> г. Киев, ул. Большая Васильковская, 81 </span>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8115272639216!2d30.515597615542486!3d50.425983079471926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfe85e033363%3A0xfe31076b1d1184a8!2z0JLQtdC70LjQutCwINCS0LDRgdC40LvRjNC60ZbQstGB0YzQutCwIDgx!5e0!3m2!1sru!2ses!4v1663952368523!5m2!1sru!2ses"
+            width="300"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="footer-map"
+          ></iframe>
+          <div class="footer-contacts-item">
+            <div class="contact-icon">
+              <img src="./assets/phone.svg" alt="phone icon" />
+            </div>
+            <span
+              ><a href="tel: +380961112233" class="footer-contact"
+                >+380961112233</a
+              ></span
+            >
+          </div>
+          <div class="footer-contacts-item">
+            <div class="contact-icon">
+              <img src="./assets/mail.svg" alt="mail icon" />
+            </div>
+            <span>
+              <a href="mailto:mail@gmail.com" class="footer-contact"
+                >mail@gmail.com</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
