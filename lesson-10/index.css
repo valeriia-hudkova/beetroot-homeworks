@@ -1,45 +1,45 @@
 .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1240px;
   padding-right: 20px;
   padding-left: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* *Main page link */
 
 .main-page {
-  margin-left: 10px;
   font-family: var(--ff-staatliches);
-  font-weight: 400;
   font-size: var(--fs-base);
+  margin-left: 10px;
+  font-weight: 400;
 }
 
 /* *Header */
 .header-wrapper {
-  display: flex;
   justify-content: space-between;
+  padding-bottom: 14px;
   align-items: center;
   padding-top: 14px;
-  padding-bottom: 14px;
+  display: flex;
 }
 
 /* *Language + Navigation */
 
 .header-nav-block {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
 }
 
 .nav-block-language {
-  margin-right: 50px;
   font-family: var(--ff-tourney);
-  font-weight: 600;
   font-size: var(--fs-base);
-  line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  margin-right: 50px;
+  line-height: 18px;
+  font-weight: 600;
 }
 
 .navigation-list {
@@ -47,13 +47,13 @@
 }
 
 .navigation-list-item {
-  margin-right: 10px;
   font-family: var(--ff-staatliches);
-  font-weight: 400;
   font-size: var(--fs-base);
-  line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--c-black);
+  margin-right: 10px;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 .navigation-list-item:last-child {
@@ -62,8 +62,8 @@
 
 /* *Main texts*/
 .main-wrapper {
-  margin-top: 70px;
   margin-bottom: 40px;
+  margin-top: 70px;
 }
 
 /* *Chapters */
@@ -76,35 +76,35 @@
 }
 
 .chapter-name {
-  display: flex;
-  justify-content: start;
   align-items: flex-start;
+  justify-content: start;
   margin-bottom: 40px;
+  display: flex;
 }
 
 .chapter-title {
   font-family: var(--ff-francois-one);
-  font-weight: 400;
   font-size: var(--fs-large);
-  line-height: 48px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
   margin-right: 10px;
+  line-height: 48px;
+  font-weight: 400;
 }
 
 .chapter-subtitle {
   font-family: var(--ff-farro);
-  font-weight: 300;
   font-size: var(--fs-small);
-  line-height: 20px;
   letter-spacing: 0.04em;
+  line-height: 20px;
+  font-weight: 300;
 }
 
 .chapter-text {
   font-family: var(--ff-pt-sans);
-  font-weight: 400;
   font-size: var(--fs-medium);
   line-height: 48px;
+  font-weight: 400;
 }
 
 /* *Chapter 3 */
