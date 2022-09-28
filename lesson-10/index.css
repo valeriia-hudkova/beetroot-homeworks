@@ -1,0 +1,138 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* *Main page link */
+
+.main-page {
+  margin-left: 10px;
+  font-family: var(--ff-staatliches);
+  font-weight: 400;
+  font-size: var(--fs-base);
+}
+
+/* *Header */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* *Language + Navigation */
+
+.header-nav-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-block-language {
+  margin-right: 50px;
+  font-family: var(--ff-tourney);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item {
+  margin-right: 10px;
+  font-family: var(--ff-staatliches);
+  font-weight: 400;
+  font-size: var(--fs-base);
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--c-black);
+}
+
+.navigation-list-item:last-child {
+  margin-right: 0;
+}
+
+/* *Main texts*/
+.main-wrapper {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+/* *Chapters */
+.chapter {
+  margin-bottom: 70px;
+}
+
+.chapter:last-child {
+  margin-bottom: 0;
+}
+
+.chapter-name {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.chapter-title {
+  font-family: var(--ff-francois-one);
+  font-weight: 400;
+  font-size: var(--fs-large);
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.chapter-subtitle {
+  font-family: var(--ff-farro);
+  font-weight: 300;
+  font-size: var(--fs-small);
+  line-height: 20px;
+  letter-spacing: 0.04em;
+}
+
+.chapter-text {
+  font-family: var(--ff-pt-sans);
+  font-weight: 400;
+  font-size: var(--fs-medium);
+  line-height: 48px;
+}
+
+/* *Chapter 3 */
+.text-item {
+  margin-bottom: 40px;
+}
+
+.text-item:last-child {
+  margin-bottom: 0;
+}
+
+/* *Text styles */
+.underlined-text {
+  text-decoration-line: underline;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.colored-text {
+  background-color: var(--c-grey);
+}
+
+.mirror-text {
+  transform: rotateY(180deg);
+}
