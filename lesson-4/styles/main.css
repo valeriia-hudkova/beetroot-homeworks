@@ -15,24 +15,25 @@ h6 {
 }
 
 h3 {
+  margin-bottom: 24px;
   font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-margin-bottom: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--c-white);
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
+  color: var(--c-gray);
 }
 
 img {
@@ -49,5 +50,3 @@ button:hover {
   background-color: var(--c-light-gray);
   cursor: pointer;
 }
-
-
