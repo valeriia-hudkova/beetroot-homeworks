@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --c-gray: #bdbdbd;
+  --c-white: #ffffff;
+  --c-dark-gray: #3c3c3c;
+  --c-blue: #18b5dc;
+  --c-light-blue: #5dcbe6;
+  --c-light-gray: #646464;
+  --c-black: #282528;
+  --c-beige: #f6f6f6;
+  --c-divider: #dddbdb;
+
+  /* Font family */
+  --ff-train: "Train One", sans-serif;
+  --ff-lato: "Lato", sans-serif;
+
+  /* Font sizes */
+  --fs-small: 16px;
+  --fs-base: 18px;
+  --fs-medium: 20px;
+  --fs-big: 30px;
+  --fs-giant: 34px;
+
+  /* Cubic bezier */
+  --b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Transition */
+  --t-normal: 0.45s var(--b-normal);
+}

@@ -1,0 +1,259 @@
+/* *Header */
+
+.header {
+  border-bottom: 1px solid var(--c-gray);
+  background-color: var(--c-white);
+  color: var(--c-dark-gray);
+  padding: 10px 0;
+  position: fixed;
+  height: 80px;
+  z-index: 9;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.header__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+/* Logo */
+.logo__link {
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.logo__text {
+  font-family: var(--ff-train);
+  text-transform: uppercase;
+  color: var(--c-black);
+  line-height: 43px;
+  font-weight: 400;
+  font-size: var(--fs-big);
+}
+
+.logo__link:hover .logo__text {
+  transition: var(--t-normal);
+  color: var(--c-blue);
+}
+
+.logo__link:hover .logo__image {
+  transition: var(--t-normal);
+  opacity: 0.8;
+}
+
+/* *Navigation */
+
+.navigation__list {
+  flex-direction: row;
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 30px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__item__link {
+  font-family: var(--ff-lato);
+  color: var(--c-dark-gray);
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: var(--fs-medium);
+}
+
+.navigation__item__link:hover {
+  transition: var(--t-normal);
+  color: var(--c-blue);
+}
+
+/* *Button */
+
+.button__text {
+  font-family: var(--ff-lato);
+  text-transform: uppercase;
+  line-height: 22px;
+  font-weight: 600;
+  font-size: var(--fs-base);
+  padding: 0 20px;
+}
+
+/* *Info block */
+.info-block {
+  background-color: var(--c-beige);
+  margin-top: 80px;
+}
+
+.info-block__wrapper {
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+
+.info-block__text-info {
+  font-family: var(--ff-lato);
+  color: var(--c-dark-gray);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.info-block__text-info__title {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  margin-bottom: 20px;
+  line-height: 41px;
+  font-weight: 700;
+  font-size: var(--fs-giant);
+}
+
+.info-block__text-info__divider {
+  background-color: var(--c-divider);
+  margin-bottom: 40px;
+  height: 4px;
+  width: 45px;
+}
+
+.info-block__text-info__subtitle {
+  margin-bottom: 60px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+  max-width: 570px;
+  font-size: var(--fs-small);
+}
+
+/* *Team block */
+.info-block__team {
+  justify-content: space-between;
+  display: flex;
+}
+
+.card__photo {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.card__photo__image {
+  display: block;
+}
+
+.card__photo:hover .card__icons {
+  transition: var(--t-normal);
+  display: flex;
+  opacity: 1;
+}
+
+.card__icons {
+  background-color: var(--c-blue);
+  justify-content: center;
+  color: var(--c-white);
+  align-items: center;
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.social-link {
+  border: 1px solid var(--c-blue);
+  justify-content: center;
+  color: var(--c-blue);
+  align-items: center;
+  font-size: var(--fs-medium);
+  display: flex;
+  height: 42px;
+  width: 42px;
+}
+.social-link:hover {
+  background-color: var(--c-blue);
+  transition: var(--t-normal);
+  color: var(--c-white);
+}
+.card__icon:hover {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-white);
+  transition: var(--t-normal);
+  color: var(--c-blue);
+}
+
+.card__icon {
+  border: 1px solid var(--c-light-blue);
+  background-color: var(--c-light-blue);
+  color: var(--c-white);
+  position: relative;
+  margin: 2px;
+}
+
+.card__info {
+  font-family: var(--ff-lato);
+  line-height: 22px;
+  font-size: var(--fs-base);
+}
+
+.card__info__name {
+  color: var(--c-black);
+  font-weight: 700;
+}
+
+.card__info__position {
+  color: var(--c-light-gray);
+  font-weight: 300;
+}
+
+/* *Footer */
+
+.footer__wrapper {
+  flex-direction: column;
+  padding-bottom: 40px;
+  align-items: center;
+  padding-top: 40px;
+  display: flex;
+}
+
+/* Footer logo */
+
+.footer__logo {
+  margin-bottom: 28px;
+}
+
+/* Footer navigation */
+
+.footer__navigation {
+  margin-bottom: 28px;
+}
+
+.navigation__item__link--footer {
+  font-family: var(--ff-lato);
+  color: var(--c-dark-gray);
+  text-transform: uppercase;
+  line-height: 22px;
+  font-weight: 600;
+  font-size: var(--fs-base);
+}
+
+.navigation__item__link--footer:hover {
+  color: var(--c-blue);
+  transition: var(--t-normal);
+}
+
+/* *Social medias */
+
+.social-media__list {
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM</title>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- *Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *Normalize -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- *Main -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- *Variables -->
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <!-- *Styles -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- *Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-page">
+      <a href="../index.html" class="main-page__link">Main page</a> <br />
+    </div>
+    <div class="app">
+      <header class="header">
+        <div class="wrapper header__wrapper">
+          <!-- *Logo -->
+          <div class="logo">
+            <a href="../lesson-12/index.html" class="logo__link">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                class="logo__image"
+              />
+              <span class="logo__text">ITLife</span>
+            </a>
+          </div>
+          <!-- *Navigation -->
+          <div class="header__navigation">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link">home</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link">services</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link">about</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link">contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- *Button -->
+          <div class="header__button">
+            <button class="button" type="button">
+              <span class="button__text"> callback </span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- *Info block -->
+      <div class="info-block">
+        <div class="wrapper info-block__wrapper">
+          <!-- *Text info -->
+          <div class="info-block__text-info">
+            <h1 class="info-block__text-info__title">who we are</h1>
+            <div class="info-block__text-info__divider"></div>
+            <p class="info-block__text-info__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <!-- *Team info -->
+          <div class="info-block__team">
+            <div class="card">
+              <div class="card__photo">
+                <img
+                  src="./assets/images/photo-alex.jpg"
+                  alt="Alex photo"
+                  class="card__photo__image"
+                />
+                <!-- *Back side -->
+                <ul class="card__icons">
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card__info">
+                <h3 class="card__info__name">John Handson</h3>
+                <p class="card__info__position">Lead designer</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__photo">
+                <img
+                  src="./assets/images/photo-alex.jpg"
+                  alt="Alex photo"
+                  class="card__photo__image"
+                />
+                <!-- *Back side -->
+                <ul class="card__icons">
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__info">
+                <h3 class="card__info__name">Alex Cutter</h3>
+                <p class="card__info__position">Developer</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__photo">
+                <img
+                  src="./assets/images/photo-elena.jpg"
+                  alt="Elena photo"
+                  class="card__photo__image"
+                />
+                <!-- *Back side -->
+                <ul class="card__icons">
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__info">
+                <h3 class="card__info__name">Elena Simpson</h3>
+                <p class="card__info__position">Artist</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__photo">
+                <img
+                  src="./assets/images/photo-lily.jpg"
+                  alt="Lily photo"
+                  class="card__photo__image"
+                />
+                <!-- *Back side -->
+                <ul class="card__icons">
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link card__icon"
+                      ><i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__info">
+                <h3 class="card__info__name">Lily Allen</h3>
+                <p class="card__info__position">Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <!-- *Logo -->
+          <div class="footer__logo">
+            <a href="../lesson-12/index.html" class="logo__link">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                class="logo__image"
+              />
+              <span class="logo__text">ITLife</span>
+            </a>
+          </div>
+          <!-- *Navigation -->
+          <div class="footer__navigation">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link--footer">home</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link--footer"
+                    >services</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link--footer">about</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__item__link--footer"
+                    >contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- *Social media -->
+          <div class="social-media footer__social-media">
+            <ul class="social-media__list">
+              <li class="social-media__list__item">
+                <a href="#" class="social-link"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </li>
+              <li class="social-media__list__item">
+                <a href="#" class="social-link"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li class="social-media__list__item">
+                <a href="#" class="social-link"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="social-media__list__item">
+                <a href="#" class="social-link"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li class="social-media__list__item">
+                <a href="#" class="social-link"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
