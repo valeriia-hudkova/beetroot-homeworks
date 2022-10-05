@@ -1,0 +1,4 @@
+mixin list()
+  ul.list
+    - for (var x = 0; x < 20; x++)
+      +list-item("text" + x)
