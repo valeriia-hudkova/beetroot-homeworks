@@ -1,41 +1,41 @@
-// // * user name
-// let userName = prompt('Хей! Як тебе звати?');
-// alert(`Приємно познайомитись, ${userName}ツ`);
+// * user name
+let userName = prompt('Хей! Як тебе звати?');
+alert(`Приємно познайомитись, ${userName}ツ`);
 
-// // *user age
-// let birthYear = prompt('Коли ти народився?');
-// let date = new Date();
-// let todayYear = date.getFullYear();
-// let age = todayYear-birthYear;
-// if (0<=age && age<18) {
-//   alert(`Всього лиш ${age}. Сподіваюсь у тебе не ввімкнено батьківський контроль:)`);
-// } else if (age>=18) {
-//   alert(`Тобі ${age}. Так ти вже доросла людинка.`);
-// } else {
-//   alert(`Будь ласка, введи корректне значення`);
-// }
+// *user age
+let birthYear = prompt('Коли ти народився?');
+let date = new Date();
+let todayYear = date.getFullYear();
+let age = todayYear-birthYear;
+if (0<=age && age<18) {
+  alert(`Всього лиш ${age}. Сподіваюсь у тебе не ввімкнено батьківський контроль:)`);
+} else if (age>=18) {
+  alert(`Тобі ${age}. Так ти вже доросла людинка.`);
+} else {
+  alert(`Будь ласка, введи корректне значення`);
+}
 
-// // *perimeter and area of a square
-// let squareSide = prompt('А тепер можеш написати довжину сторони квадрата, а я порахую його периметр и площу.');
-// let squareArea = Math.pow(squareSide, 2);
-// let squarePerimeter = squareSide*4;
-// alert(`Площа дорівнює ${squareArea}, а периметр - ${squarePerimeter}`);
+// *perimeter and area of a square
+let squareSide = prompt('А тепер можеш написати довжину сторони квадрата, а я порахую його периметр и площу.');
+let squareArea = Math.pow(squareSide, 2);
+let squarePerimeter = squareSide*4;
+alert(`Площа дорівнює ${squareArea}, а периметр - ${squarePerimeter}`);
 
-// // *circle
-// let radius = prompt('Хочеш ще дізнатись площу окружності? Не проблема, пиши радіус кола і я порахую.');
-// alert(`Площа кола дорівнює ${Math.pow(radius, 2)*Math.PI.toFixed(2)}`);
+// *circle
+let radius = prompt('Хочеш ще дізнатись площу окружності? Не проблема, пиши радіус кола і я порахую.');
+alert(`Площа кола дорівнює ${Math.pow(radius, 2)*Math.PI.toFixed(2)}`);
 
-// // *distance
-// let distance = prompt('Зібрався у відпустку? Яка відстань до місця, куди плануєш поїхати?');
-// let time = prompt('Скільки часу думаєш витратити на дорогу?');
-// let speed = distance/time;
-// alert(`Доведеться рухатися зі швидкістю ${speed.toFixed(2)} км/год.`);
+// *distance
+let distance = prompt('Зібрався у відпустку? Яка відстань до місця, куди плануєш поїхати?');
+let time = prompt('Скільки часу думаєш витратити на дорогу?');
+let speed = distance/time;
+alert(`Доведеться рухатися зі швидкістю ${speed.toFixed(2)} км/год.`);
 
-// // *currency exchange
-// const baks = 37;
-// let moneyAmount = prompt('Наразі непоганий курс. Хочеш купити кілька баксів? Напиши скільки гривень хочеш обміняти.');
-// let exchangedMoney = moneyAmount/baks;
-// alert(`Отримаєш ${exchangedMoney.toFixed(2)} баксів. На крихту хліба вистачить.`);
+// *currency exchange
+const baks = 37;
+let moneyAmount = prompt('Наразі непоганий курс. Хочеш купити кілька баксів? Напиши скільки гривень хочеш обміняти.');
+let exchangedMoney = moneyAmount/baks;
+alert(`Отримаєш ${exchangedMoney.toFixed(2)} баксів. На крихту хліба вистачить.`);
 
 // !typeof
 
