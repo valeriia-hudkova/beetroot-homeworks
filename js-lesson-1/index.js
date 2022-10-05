@@ -3,9 +3,8 @@ let userName = prompt('Хей! Як тебе звати?');
 alert(`Приємно познайомитись, ${userName}ツ`);
 
 // *user age
-let birthYear = prompt('Коли ти народився?');
-let date = new Date();
-let todayYear = date.getFullYear();
+let birthYear = +prompt('Коли ти народився?');
+let todayYear = new Date().getFullYear();
 let age = todayYear-birthYear;
 if (0<=age && age<18) {
   alert(`Всього лиш ${age}. Сподіваюсь у тебе не ввімкнено батьківський контроль:)`);
