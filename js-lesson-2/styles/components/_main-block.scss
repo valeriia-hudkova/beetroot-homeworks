@@ -18,6 +18,7 @@
       font-family: $ff-base;
       margin-bottom: 20px;
       font-size: $fs-big;
+      text-align: center;
       font-weight: 700;
     }
     &__items-list {
@@ -28,6 +29,9 @@
         font-size: $fs-base;
         margin-bottom: 10px;
         font-weight: 400;
+        &__subtitle {
+          text-transform: lowercase;
+        }
       }
     }
   }

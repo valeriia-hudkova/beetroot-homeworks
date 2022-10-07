@@ -33,6 +33,7 @@ a {
 .header {
   background-color: #fff;
   position: fixed;
+  opacity: 0.8;
   right: 0;
   left: 0;
   top: 0;
@@ -68,6 +69,7 @@ a {
   font-family: sans-serif;
   margin-bottom: 20px;
   font-size: 26px;
+  text-align: center;
   font-weight: 700;
 }
 .main__list__items-list {
@@ -79,6 +81,9 @@ a {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: 400;
+}
+.main__list__items-list__item__subtitle {
+  text-transform: lowercase;
 }
 
 .footer__wrapper {
