@@ -1,0 +1,38 @@
+.main {
+  margin-top: 80px;
+  color: $c-black;
+  &__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+  }
+  &__list {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-family: $ff-base;
+      margin-bottom: 20px;
+      font-size: $fs-big;
+      text-align: center;
+      font-weight: 700;
+    }
+    &__items-list {
+      text-align: center;
+      &__item {
+        text-transform: uppercase;
+        font-family: $ff-base;
+        font-size: $fs-base;
+        margin-bottom: 10px;
+        font-weight: 400;
+        &__subtitle {
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+}
