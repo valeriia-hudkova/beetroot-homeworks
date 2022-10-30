@@ -1,0 +1,18 @@
+.header {
+  background-color: $c-white;
+  position: fixed;
+  opacity: 0.8;
+  right: 0;
+  left: 0;
+  top: 0;  
+
+  &__wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    width: 100%;
+  }
+}
+

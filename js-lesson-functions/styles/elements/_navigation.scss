@@ -1,0 +1,24 @@
+.navigation {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  &__list {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    &__item {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &__link {
+        color: $c-black;
+        &:hover {
+          color: $c-grey;
+          transition: $t-normal;
+        }
+      }
+    }
+  }
+}
